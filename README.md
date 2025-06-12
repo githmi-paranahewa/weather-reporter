@@ -26,3 +26,5 @@ This is a simple weather web application that displays real-time weather informa
 - Vanilla JavaScript  
 - WeatherAPI (Free tier)  
 
+### 🔗 Live Demo
+[View deployed website - Weather Reporter ](https://weather-reporter-sigma.vercel.app/)
