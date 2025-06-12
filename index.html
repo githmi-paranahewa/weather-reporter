@@ -19,24 +19,26 @@
               search
             </span>
           </button>
+          
         </header>
+      
 
-        <section class="weather-info">
+        <section class="weather-info" id="weather-section">
           <div class="location-date-container">
             <div class="location">
               <span class="material-symbols-outlined">
                 location_on
               </span>
-              <h4 class="city-txt">Colombo</h4>
+              <h4 class="city-txt">...</h4>
             </div>
-            <h5 class="current-date-txt reg-txt">Wed, 06 JUne</h5>
+            <h5 class="current-date-txt reg-txt">--</h5>
           </div>
 
           <div class="weather-summary-container">
-            <img src="//cdn.weatherapi.com/weather/128x128/day/116.png" alt="" class="weather-summary-img">
+            <img  alt="" class="weather-summary-img">
             <div class="weather-summary-info">
-              <h1 class="temp-txt">29 °C</h1>
-              <h3 class="condition-txt reg-txt">Cloudy</h3>
+              <h1 class="temp-txt">--</h1>
+              <h3 class="condition-txt reg-txt">--</h3>
             </div>
             
           </div>
@@ -49,7 +51,7 @@
               </span>
               <div class="condition-info">
                 <h5 class="reg-txt">Humidity</h5>
-                <h5 class="humidity-value-txt">66%</h5>
+                <h5 class="humidity-value-txt">--%</h5>
               </div>
             </div>
             <div class="condition-item">
@@ -58,7 +60,7 @@
               </span>
               <div class="condition-info">
                 <h5 class="reg-txt">Wind</h5>
-                <h5 class="humidity-value-txt">66 km/h</h5>
+                <h5 class="wind-value-txt">-- km/h</h5>
               </div>
             </div>
             <div class="condition-item">
@@ -67,58 +69,20 @@
               </span>
               <div class="condition-info">
                 <h5 class="reg-txt">UV Index</h5>
-                <h5 class="humidity-value-txt">66</h5>
+                <h5 class="uv-index-txt">--</h5>
               </div>
             </div>
           </div>
 
-          <div class="forecast-items-container">
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5>
-              <img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            <div class="forecast-item">
-              <h5 class="forecast-item-date reg-txt">02 wed</h5><img src="//cdn.weatherapi.com/weather/64x64/day/116.png" alt="" class="forecast-item-img">
-              <h5 class="forecast-item-temp">30 °C</h5>
-            </div>
-            
-          </div>
+          <div class="forecast-items-container"></div>
 
-        </section>
+          <!-- Hidden template -->
+          <div class="forecast-item forecast-item-template" style="display:none;">
+            <h5 class="forecast-item-date reg-txt"></h5>
+            <img src="" alt="" class="forecast-item-img" />
+            <h5 class="forecast-item-temp"></h5>
+          </div>
+         </section>
         <div class="credits reg-txt">
           Powered by <a href="https://www.weatherapi.com/" title="Free Weather API" class="credits-a" ><b>WeatherAPI.com</b></a>
         </div>
