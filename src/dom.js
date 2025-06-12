@@ -11,7 +11,9 @@ export const selectors = {
   forecastItemsContainer: '.forecast-items-container',
   forecastItemTemplate: '.forecast-item-template',
   citySearch:'.city-search',
-  searchBtn:'.search-btn'
+  searchBtn:'.search-btn',
+  loadingSpinner: '#loading-spinner',
+  weatherSection: '#weather-section',
 };
 
 export const elements = {};

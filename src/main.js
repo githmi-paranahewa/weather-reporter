@@ -1,10 +1,11 @@
 import { fetchWeatherData } from './api.js';
 import { updateCurrentWeather, renderForecast } from './ui.js';
 import { elements } from './dom.js';
-
+import { showLoading, hideLoading } from './loading.js';
 
 async function updateWeather(city) {
   try {
+    showLoading()
     const data = await fetchWeatherData(city);
 
     if (data.error) {
@@ -17,6 +18,9 @@ async function updateWeather(city) {
   } catch (err) {
     alert(`Failed to fetch weather data: ${err.message}`);
     console.error(err);
+    updateWeather('Colombo');
+  }finally{
+    hideLoading()
   }
 }
 
