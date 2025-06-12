@@ -3,6 +3,8 @@ import { updateCurrentWeather, renderForecast } from './ui.js';
 import { elements } from './dom.js';
 import { showLoading, hideLoading } from './loading.js';
 
+let hasRetried = false;
+
 async function updateWeather(city) {
   try {
     showLoading()
@@ -16,9 +18,13 @@ async function updateWeather(city) {
     updateCurrentWeather(data);
     renderForecast(data.forecast.forecastday);
   } catch (err) {
-    alert(`Failed to fetch weather data: ${err.message}`);
     console.error(err);
-    updateWeather('Colombo');
+    if (!hasRetried) {
+      hasRetried = true;
+      updateWeather('Colombo'); 
+    } else {
+      alert(`Failed to fetch weather data. Please try again later.`);
+    }
   }finally{
     hideLoading()
   }
