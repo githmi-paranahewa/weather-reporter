@@ -9,22 +9,22 @@
 
     </head>
   <body>
-    <div id="app">
+    <div id="app" class="center-wrapper">
       <main class="main-container">
+        
         <header class="searching-container">
-
           <input class="city-search" placeholder="Search City">
           <button class="search-btn">
             <span class="material-symbols-outlined">
               search
             </span>
           </button>
-          
         </header>
 
         <div class="loading-spinner hidden" id="loading-spinner"></div>
 
         <section class="weather-info" id="weather-section">
+
           <div class="location-date-container">
             <div class="location">
               <span class="material-symbols-outlined" style="font-size: 35px">
@@ -73,6 +73,7 @@
                 <h5 class="uv-index-txt">--</h5>
               </div>
             </div>
+
           </div>
 
           <div class="forecast-items-container"></div>
@@ -83,13 +84,16 @@
             <img src="" alt="" class="forecast-item-img" />
             <h5 class="forecast-item-temp"></h5>
           </div>
+
          </section>
+
         <div class="credits reg-txt">
           Powered by <a href="https://www.weatherapi.com/" title="Free Weather API" class="credits-a" ><b>WeatherAPI.com</b></a>
         </div>
         
       </main>
     </div>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
