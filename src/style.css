@@ -191,7 +191,7 @@ body::before {
 .forecast-items-container {
   display: flex;
   gap:15px;
-  overflow-x: scroll;
+  overflow-x: auto;
   padding-bottom: 12px;
   margin-bottom: 20px;
   justify-content: center;
