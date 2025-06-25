@@ -194,6 +194,7 @@ body::before {
   overflow-x: scroll;
   padding-bottom: 12px;
   margin-bottom: 20px;
+  justify-content: center;
 
 }
 .forecast-items-container::-webkit-scrollbar {
@@ -229,5 +230,8 @@ body::before {
   .location-date-container {
     flex-direction: column;
     gap: 10px;
+  }
+  .forecast-items-container {
+    justify-content: flex-start; 
   }
 }
